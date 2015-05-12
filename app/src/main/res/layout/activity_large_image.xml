@@ -7,9 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:clipChildren="false">
+        android:layout_height="match_parent">
         <TextView
             android:id="@+id/large_images_heading"
             android:layout_width="wrap_content"
@@ -29,15 +27,89 @@
             android:layout_width="@dimen/image_small_dimension_twice"
             android:layout_height="@dimen/image_small_dimension_twice"
             android:layout_below="@id/large_images_heading"
-            android:src="@drawable/large_3"/>
+            android:src="@drawable/large_3"
+            style="@style/large_image" />
 
         <ImageView
+            android:id="@+id/large_image_7"
             android:layout_width="@dimen/image_small_dimension_thrice"
             android:layout_height="@dimen/image_small_dimension_thrice"
             android:layout_toRightOf="@id/large_imageView_3"
             android:layout_alignTop="@id/large_imageView_3"
-            android:src="@drawable/large_7" />
+            android:src="@drawable/large_7"
+            style="@style/large_image"
+            android:layout_marginRight="-230dp"
+            android:adjustViewBounds="true" />
 
+        <ImageView
+            android:id="@+id/large_image_9"
+            android:layout_below="@+id/large_image_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/large_image"
+            android:adjustViewBounds="true"
+            android:src="@drawable/large_9"/>
+
+        <ImageView
+            android:id="@+id/large_image_4"
+            android:layout_below="@+id/large_image_9"
+            android:layout_width="@dimen/image_small_dimension_twice"
+            android:layout_height="@dimen/image_small_dimension_twice"
+            android:src="@drawable/large_4"
+            style="@style/large_image"/>
+
+        <ImageView
+            android:id="@+id/large_image_1"
+            android:layout_below="@id/large_image_4"
+            android:layout_width="@dimen/image_small_dimension_twice"
+            android:layout_height="@dimen/image_small_dimension_twice"
+            android:layout_alignParentRight="true"
+            style="@style/large_image"
+            android:adjustViewBounds="true"
+            android:src="@drawable/large_1"/>
+
+        <ImageView
+            android:id="@+id/large_image_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/large_image_1"
+            style="@style/large_image"
+            android:adjustViewBounds="true"
+            android:src="@drawable/large_6"/>
+
+        <ImageView
+            android:id="@+id/large_image_2"
+            android:layout_below="@id/large_image_6"
+            android:layout_width="@dimen/image_small_dimension_twice"
+            android:layout_height="@dimen/image_small_dimension_twice"
+            style="@style/large_image"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/large_2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/large_image_2">
+            <ImageView
+                android:id="@+id/large_image_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/large_image"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:src="@drawable/large_5"/>
+
+            <ImageView
+                android:id="@+id/large_image_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/large_image"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:src="@drawable/large_8"/>
+        </LinearLayout>
 
     </RelativeLayout>
 
