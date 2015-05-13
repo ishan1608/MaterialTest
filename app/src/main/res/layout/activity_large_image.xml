@@ -66,7 +66,7 @@
             android:layout_alignParentRight="true"
             style="@style/large_image"
             android:adjustViewBounds="true"
-            android:src="@drawable/large_1"/>
+            android:src="@drawable/large_1" />
 
         <ImageView
             android:id="@+id/large_image_6"
